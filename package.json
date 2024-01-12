@@ -1,0 +1,17 @@
+{
+  "name": "network-streams-substack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Tanvir Rifat <tr9836859@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body": "^5.1.0",
+    "concat-stream": "^2.0.0",
+    "through2": "^4.0.2"
+  }
+}
