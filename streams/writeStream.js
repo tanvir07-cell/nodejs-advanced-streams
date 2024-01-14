@@ -1,16 +1,14 @@
 const fs = require("node:fs");
 
-const w = fs.createWriteStream("./makeWriteStream.txt");
+const out = fs.createWriteStream("makeWriteStream.txt")
 
-
-
-
-w.write("Hello world\n");
-
-w.write("My name is Tanvir Rifat\n");
-
- w.end()
-
-w.on("finish",()=>{
-    console.log("finished") 
+out.on("finish",()=>{
+    console.log("Done...")
 })
+
+out.write("Hello My name is Tanvir Rifat\n")
+
+out.write("I am a student of CSE\n")
+
+out.end()
+
