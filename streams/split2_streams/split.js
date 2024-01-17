@@ -38,3 +38,8 @@ function end(done){
     console.log(spaceCount);
     done()
 }
+
+var path = require("path")
+
+console.log(__dirname+"/split.js")
+
