@@ -35,3 +35,25 @@ function end(done) {
   console.log("done");
   done();
 }
+
+
+// const ytdl = require('ytdl-core');
+// const { spawn } = require('child_process');
+// const fs = require("fs")
+
+// const videoUrl = 'https://www.youtube.com/watch?v=8Pb0i8zi1kU';
+// const filename = 'downloaded-video.mp4';
+
+// ytdl(videoUrl, {filter:"video" }) // Optional for compatibility
+//   .pipe(fs.createWriteStream(__dirname+"/"+filename))
+//   .on('finish', () => {
+//     console.log('Download complete! Playing video in VLC...');
+//     const vlc = spawn('vlc', ['--started-from-file', __dirname+"/"+filename]); // Linux-specific option
+//     vlc.on('close', (code) => {
+//       console.log('VLC closed with code:', code);
+//     });
+//   })
+//   .on('error', (err) => {
+//     console.error('Error downloading video:', err);
+//   });
+
